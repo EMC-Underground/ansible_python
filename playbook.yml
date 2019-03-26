@@ -1,0 +1,8 @@
+---
+- hosts: all
+  #  become: true
+  vars:
+    passed: "{{ passed }}"
+    passed2: "{{ passed2 }}"
+  roles:
+    - all
