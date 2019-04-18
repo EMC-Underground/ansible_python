@@ -1,0 +1,2 @@
+- debug:
+    msg: "Hello World and {{ passed }} and {{ passed2 }}"

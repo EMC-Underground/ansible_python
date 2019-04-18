@@ -11,11 +11,12 @@ RUN mkdir /code
 
 WORKDIR /code
 
-COPY ./ansible_playbook.py /code
+COPY ./ansible_playbook3.py /code
 COPY ./roles/all/tasks/main.yml /code/roles/all/tasks/main.yml
 COPY ./hosts /code
 COPY ./playbook.yml /code
 
 
-ENTRYPOINT ["ansible-playbook", "playbook.yml", "-u", "root", "-i","hosts"]
+ENTRYPOINT ["python", "ansible_playbook3.py"]
+#ENTRYPOINT ["ansible-playbook", "playbook.yml", "-u", "root", "-i","hosts"]
 

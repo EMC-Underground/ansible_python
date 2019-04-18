@@ -1,0 +1,8 @@
+provider:
+  name: openfaas
+  gateway: https://faas.container.se.lab.emc.com
+functions:
+  ansible-playbook3:
+    lang: python3
+    handler: ./ansible-playbook3
+    image: bsoper/ansible-playbook3:latest
